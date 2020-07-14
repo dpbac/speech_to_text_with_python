@@ -25,7 +25,7 @@ will be using a free version of `Google Speech API`. In addition, the free versi
 is the process of splitting more than one speaker from a single audio. It is also not possible to detect punctuation. It supports 
 different [languages](https://cloud.google.com/speech-to-text/docs/languages). Currently the following limits are applied:
 
-IMAGE
+![](https://github.com/dpbac/speech_to_text_with_python/blob/master/images/google_speech_api_limits.JPG)
 
 * [`PyDub`](https://github.com/jiaaro/pydub): Allows different types of audio manipulation
 

@@ -1,7 +1,57 @@
 Speech to text 
 ==============================
 
-In this project some Python's tools used for audio and transcription are explored.
+We have two goals in this project:
+
+1. Explore some Python's tools used for audio manipulation and transcription from speech to text.
+
+2. Transcript audio files from telephonic calls and apply on it sentiment and topic analysis.
+
+During the tools exploration phase audio files in different conditions are used. Such as:
+
+* Different languages of speakers (english and dutch)
+
+* Multiple speaker with multiple channels
+
+* Presence of noise
+
+The tools explored in this project are:
+
+* [`SpeechRecognition`](https://pypi.org/project/SpeechRecognition/): This Python library provides an easy way to interact with many 
+speech-to-text APIs.
+
+* [`Google Speech API`](https://cloud.google.com/speech-to-text): From the Speech APIs available to use within SpeechRecognition 
+will be using a free version of `Google Speech API`. In addition, the free version does not support `speaker diarization` which 
+is the process of splitting more than one speaker from a single audio. It is also not possible to detect punctuation. It supports 
+different [languages](https://cloud.google.com/speech-to-text/docs/languages). Currently the following limits are applied:
+
+IMAGE
+
+* [`PyDub`](https://github.com/jiaaro/pydub): Allows different types of audio manipulation
+
+# Datasets
+
+When searching for datasets I had two goals in mind:
+
+* Having a dataset of Dutch Speakers: I live in The Netherlands and I'll be working with audio of Dutch Speakers
+
+* Having a dataset of phone calls with 2 channels: I'll be also probably working in a project that involves calls. Having a two channel 
+allows to separated the audio of the two speakers using `PyDub`
+
+Luckily I succeed in obtaining both goals:
+
+* `Dutch dataset`: [`Common Voice`](https://voice.mozilla.org/en/datasets) is a initiative from Mozilla that offers open source, 
+multi-language dataset of voices that anyone can use to train speech-enabled applications. At this moment you can have access to 
+18 different languages. You download not only audio files but also other .tsv files with information about those audio files. Really 
+great resource!
+
+* `Multiuser audio files`: There are two datasets:
+
+    - [`Call Friend`](https://ca.talkbank.org/access/CallFriend/)
+    - [`Call Home`](https://ca.talkbank.org/access/CallHome/)
+    
+Both have some different languages (unfortunatelly not Dutch) and audios are both in `wav` and `mp3`. In addition, you can have the 
+transcriptions. 
 
 Project Organization
 ------------

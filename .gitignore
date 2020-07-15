@@ -1,6 +1,11 @@
 # folders and files removed from what was generated using cookiecutter
 
-data/
+data/audio_call_friend
+data/audio_call_home
+data/audio_common_voices
+data/audio_openslr
+data/external
+data/interim
 docs/ 
 models/
 notebooks/.ipynb_checkpoints

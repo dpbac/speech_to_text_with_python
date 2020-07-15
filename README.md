@@ -1,7 +1,7 @@
-Speech to text 
+Speech to Text in Python
 ==============================
 
-We have two goals in this project:
+Goals in this project:
 
 1. Explore some Python's tools used for audio manipulation and transcription from speech to text.
 
@@ -14,6 +14,35 @@ During the tools exploration phase audio files in different conditions are used.
 * Multiple speaker with multiple channels
 
 * Presence of noise
+
+Project Organization
+------------
+    │
+    ├── README.md          <- The top-level README for developers using this project.
+    │
+    ├── data
+    │   ├── audio_call_friend       <- Audio files downloaded from CallFriend.
+    │   ├── audio_call_home         <- Audio files downloaded from CallHome.
+    │   ├── audio_common_voices     <- Files downloaded from Common Voices.
+    │   │   └── nl                  <- Dutch audio and .tsv files
+    │   │       └── raw             <- mp3 files.
+    │   ├── audio_openslr           <- Audio file downloaded from LibriSpeech
+    │   │    └── dev-clean          <- Dutch audio and .tsv files
+    │   │       └── 1272            <- flac files.    
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   └── processed      <- The final, canonical data sets for modeling.
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                        `1.0-jqp-initial-data-exploration`.
+    │
+    ├── images             <- Images used in the project.
+    │
+    ├──.gitignore          <- Contains entries of files or folders to ignore in a project.
+    │
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+	                         generated with `pip freeze > requirements.txt`
+
+
 
 The tools explored in this project are:
 
@@ -52,55 +81,6 @@ great resource!
     
 Both have some different languages (unfortunatelly not Dutch) and audios are both in `wav` and `mp3`. In addition, you can have the 
 transcriptions. 
-
-Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
 
 --------
 

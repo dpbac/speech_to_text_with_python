@@ -82,7 +82,9 @@ transcriptions.
 **[01-Speech Transcription using Speech Recognition and PyDub](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/01-Speech%20Transcription%20using%20Speech%20Recognition%20and%20PyDub.ipynb)**:
 Use `PyDub` to access audio file information and modify audio files before performing transcriptions with `SpeechRecognition` and `Speech Google API`.
 
-**[](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/02-Phonecalls_analysis.ipynb)**
+**[02-Phone calls Analysis](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/02-Phone%20calls%20Analysis.ipynb)**:
+The goal of this notebook is to transcribe some phone calls and perform sentiment and topic analysis on them. For now we retrieve data from
+`CallFriend` and performed some analysis on audio attributes on the audio files retrieved. Therefore, this one is still in development.
 
 
 # Install/Technical requirements

@@ -7,7 +7,7 @@ Goals in this project:
 
 2. Transcript audio files from telephonic calls and apply on it sentiment and topic analysis.
 
-During the tools exploration phase audio files in different conditions are used. Such as:
+During tools exploration phase audio files under different conditions are used. Such as:
 
 * Different languages of speakers (english and dutch)
 
@@ -60,19 +60,14 @@ different [languages](https://cloud.google.com/speech-to-text/docs/languages). C
 
 # Datasets
 
-When searching for datasets I had two goals in mind:
-
-* Having a dataset of Dutch Speakers: I live in The Netherlands and I'll be working with audio of Dutch Speakers
-
-* Having a dataset of phone calls with 2 channels: I'll be also probably working in a project that involves calls. Having a two channel 
-allows to separated the audio of the two speakers using `PyDub`
-
-Luckily I succeed in obtaining both goals:
-
-* `Dutch dataset`: [`Common Voice`](https://voice.mozilla.org/en/datasets) is a initiative from Mozilla that offers open source, 
+* `Dutch and English datasets`: [`Common Voice`](https://voice.mozilla.org/en/datasets) is a initiative from Mozilla that offers open source, 
 multi-language dataset of voices that anyone can use to train speech-enabled applications. At this moment you can have access to 
 18 different languages. You download not only audio files but also other .tsv files with information about those audio files. Really 
 great resource!
+
+* `LibriSpeech`: [`LibriSpeech`](http://www.openslr.org/12/) is a carefully segmented and aligned corpus of approximately 1000 hours of 16kHz 
+read English speech, derived from 
+read audiobooks. I downloaded only `dev-clean.tar.gz`.
 
 * `Multiuser audio files`: There are two datasets:
 
@@ -81,6 +76,22 @@ great resource!
     
 Both have some different languages (unfortunatelly not Dutch) and audios are both in `wav` and `mp3`. In addition, you can have the 
 transcriptions. 
+
+# Notebooks
+
+**[01-Speech Transcription using Speech Recognition and PyDub](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/01-Explore%20Speech%20Transcription%20using%20Speech%20Recognition%20and%20PyDub.ipynb)**:
+
+
+# Install/Technical requirements
+
+* You'll need Twitter API credentials to run this project. In [01-collecting_and_saving_tweets.ipynb](https://github.com/dpbac/twitter_analysis_online_grocery_NL/blob/master/notebooks/01-collecting_and_saving_tweets.ipynb) replace `private_twitter_credentials.py` by `twitter_credentials.py`. `twitter_credentials.py` must contain your [Twitter 
+credentials](https://developer.twitter.com/en/docs/basics/authentication/oauth-1-0a/obtaining-user-access-tokens).
+
+* conda version: 4.8.3
+* Install requirements using `pip install -r requirements.txt`.
+  * Make sure you use Python 3 (I used 3.6.7).
+  * You may want to use a virtual environment for this.
+
 
 --------
 

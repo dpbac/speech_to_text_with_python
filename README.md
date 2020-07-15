@@ -1,4 +1,4 @@
-Speech to Text in Python
+🗣️ Speech to Text in Python 📜
 ==============================
 
 Goals in this project:

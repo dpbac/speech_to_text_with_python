@@ -89,9 +89,6 @@ The goal of this notebook is to transcribe some phone calls and perform sentimen
 
 # Install/Technical requirements
 
-* You'll need Twitter API credentials to run this project. In [01-collecting_and_saving_tweets.ipynb](https://github.com/dpbac/twitter_analysis_online_grocery_NL/blob/master/notebooks/01-collecting_and_saving_tweets.ipynb) replace `private_twitter_credentials.py` by `twitter_credentials.py`. `twitter_credentials.py` must contain your [Twitter 
-credentials](https://developer.twitter.com/en/docs/basics/authentication/oauth-1-0a/obtaining-user-access-tokens).
-
 * conda version: 4.8.3
 * Install requirements using `pip install -r requirements.txt`.
   * Make sure you use Python 3 (I used 3.6.7).

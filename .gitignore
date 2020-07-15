@@ -16,7 +16,6 @@ src/
 .env
 LICENSE
 Makefile
-requirements.txt
 setup.py
 test_environment.py
 tox.ini

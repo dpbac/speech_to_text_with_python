@@ -79,7 +79,10 @@ transcriptions.
 
 # Notebooks
 
-**[01-Speech Transcription using Speech Recognition and PyDub](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/01-Explore%20Speech%20Transcription%20using%20Speech%20Recognition%20and%20PyDub.ipynb)**:
+**[01-Speech Transcription using Speech Recognition and PyDub](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/01-Speech%20Transcription%20using%20Speech%20Recognition%20and%20PyDub.ipynb)**:
+Use `PyDub` to access audio file information and modify audio files before performing transcriptions with `SpeechRecognition` and `Speech Google API`.
+
+**[](https://github.com/dpbac/speech_to_text_with_python/blob/master/notebooks/02-Phonecalls_analysis.ipynb)**
 
 
 # Install/Technical requirements
